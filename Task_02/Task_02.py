@@ -25,8 +25,9 @@ while confets > 0:
         pl = 1
     print("Ход пользователя ", players[pl])
     hod = int(input("Введите количество конфет: "))
-    if hod > 28:
-        print("Можно взять не более 28 конфет за один ход!")
+    if hod > 28 or hod < 1:
+        print("Можно взять от 1 до 28 конфет за один ход!")
+        player = not player
     else:
         if confets < hod:
             hod = confets
@@ -37,6 +38,6 @@ while confets > 0:
 
 
 print("Игра окончена!")
-print("Выиграл ", players[pl])
-print("Ему достаётся ", players_sum[pl], "своих", " + ", start - players_sum[pl], "конфет оппонента!")
+print("Выиграл игрок ", players[pl])
+print("Приз: ", players_sum[pl], "своих", " + ", start - players_sum[pl], "конфет оппонента!")
 
