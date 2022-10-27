@@ -1,7 +1,5 @@
 # Создайте программу для игры в ""Крестики-нолики"".
 
-# print("  ____________\nC|___|___|___|\nB|___|___|___|\nA|___|___|___|\n*| 1 | 2 | 3 |")
-
 import random
 def print_pole(pole):
     print("   ", end='')
@@ -17,7 +15,7 @@ def print_pole(pole):
             else:
                 print(pole[i][j], "|", end=' ')
         print()
-    # print("  |", end='')
+
 
 strings = int(input("Введите количество строк: "))
 tables = int(input("Введите количество столбцов: "))
@@ -39,14 +37,13 @@ while pobeda == 0:
     else:
         pl = 1
     print("Ход пользователя ", players[pl][0])
-    # print_pole(pole)
+
     hod = str(input("Введите координаты хода (строка, столбец): "))
     if hod == "!":
         break
     hod = hod.split(', ')
     hod = [int(hod[0]), int(hod[1])]
-    # print(hod)
-    # print(players[player][1])
+
     if pole[hod[0] - 1][hod[1] - 1] == 0:
         pole[hod[0] - 1][hod[1] - 1] = players[player][1]
     else:
