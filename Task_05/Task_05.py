@@ -41,23 +41,3 @@ with open('new_array_list.txt', 'w') as new_array_list:
                         new_array_list.writelines('\n')
                         new_array = [array[count]]
                 # last = array[i]
-
-
-
-#     new_array = []
-#     index = random.randint(0, len(array))
-#     new_array.append(array[index])
-#     new_index = index
-#     last = array[index]
-#     for new_index < len(array):
-#         new_index = random.randint(index + 1, len(array) - 1)
-#         if array[new_index] > last:
-#             new_array.append(array[new_index])
-#             last = array[new_index]
-
-
-    # decoded_string += coded_text[i + 1] * int(coded_text[i])
-#
-# with open('decoded_file.txt', 'w') as decoded:
-#     decoded.writelines(decoded_string)
-# print("Текст декодирован: ", decoded_string)
