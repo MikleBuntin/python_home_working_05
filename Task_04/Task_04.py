@@ -27,7 +27,6 @@ if next == 1:
 
     with open('coded_file.txt', 'r') as data_2:
         coded_text = data_2.read() + ' '
-    print(coded_text)
     decoded_string = ''
 
     for i in range(0, len(coded_text) - 1, 2):
